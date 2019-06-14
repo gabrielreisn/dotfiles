@@ -102,6 +102,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias -g G=" | grep --color"
+alias fy="cd ~/Documents/pipefy"
+alias ui="cd ~/Documents/pipeui"
+alias style="cd ~/Documents/pipestyle"
+ 
+alias lambda="cd ~/Downloads && ./LT  -user dev@pipefy.com -key L2VFT66llYP6mWga0cMSk4nb7IbuOHJlns3C6CPXSMGu9XwDPJ"
 
 # This loads nvm
 export NVM_DIR="$HOME/.nvm"
@@ -138,4 +143,13 @@ reb-branch() {
 
 kill-port() {
   kill -9 $(lsof -t -i:"$1")
+}
+
+rmv(){
+ rm -rf "$1"
+}
+
+branch-up() {
+  local branch=$(git branch | grep \* | cut -d ' ' -f2)
+  git push --set-upstream origin $branch
 }
