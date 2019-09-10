@@ -105,8 +105,6 @@ alias -g G=" | grep --color"
 alias fy="cd ~/Documents/pipefy"
 alias ui="cd ~/Documents/pipeui"
 alias style="cd ~/Documents/pipestyle"
- 
-alias lambda="cd ~/Downloads && ./LT  -user dev@pipefy.com -key L2VFT66llYP6mWga0cMSk4nb7IbuOHJlns3C6CPXSMGu9XwDPJ"
 
 # This loads nvm
 export NVM_DIR="$HOME/.nvm"
