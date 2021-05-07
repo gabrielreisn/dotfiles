@@ -1,31 +1,33 @@
 [/]
-warn-vte-config-issue=false
 prompt-on-close=true
+quake-specific-monitor=0
+warn-vte-config-issue=false
 
 [keybindings]
-session-close='<Primary><Alt>q'
-win-switch-to-next-session='<Primary>Left'
-terminal-paste='<Alt>v'
-win-switch-to-previous-session='<Primary>Right'
-session-add-right='<Alt>d'
-session-add-down='<Primary><Alt>d'
 app-new-session='<Alt>t'
+app-new-window='<Alt>n'
+session-add-down='<Primary><Alt>d'
+session-add-right='<Alt>d'
+session-close='<Primary><Alt>q'
 terminal-close='<Alt>w'
 terminal-copy='<Alt>c'
-app-new-window='<Alt>n'
+terminal-paste='<Alt>v'
+win-switch-to-next-session='<Primary>Left'
+win-switch-to-previous-session='<Primary>Right'
 
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#1E1E1E'
+badge-color-set=false
+bold-color-set=false
+cursor-colors-set=false
+draw-margin=60
+font='Fira Code 12'
 foreground-color='#A7A7A7'
-visible-name='Default'
+highlight-colors-set=false
 login-shell=true
 palette=['#1E1E1E', '#CF6A4C', '#8F9D6A', '#F9EE98', '#7587A6', '#9B859D', '#AFC4DB', '#A7A7A7', '#5F5A60', '#CF6A4C', '#8F9D6A', '#F9EE98', '#75758787A6A6', '#9B859D', '#FCFCAFAF3E3E', '#FFFFFF']
-badge-color-set=false
-use-system-font=false
-cursor-colors-set=false
-highlight-colors-set=false
-use-theme-colors=false
-bold-color-set=false
-font='Fira Code 12'
 terminal-bell='icon-sound'
 text-blink-mode='focused'
-background-color='#1E1E1E'
+use-system-font=false
+use-theme-colors=false
+visible-name='Default'

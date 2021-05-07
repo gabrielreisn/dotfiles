@@ -1,3 +1,27 @@
+# Updates 2021
+
+### Things to install
+
+1. slack
+1. zoom
+---
+1. vscode
+1. chrome / firefox / brave
+1. insomnia
+1. docker / docker-compose
+1. nvm / yarn / vtop
+1. tilix
+1. oh-my-zsh
+1. gitk
+---
+1. spotfy
+1. telegram
+
+
+* migrate data from last-password to one-password?
+
+
+---
 # installed with store
 
 tilix
@@ -34,24 +58,12 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | b
 
 ### please remember to export zsh
 
-## set node version
-
-nvm install 8.11.1
-npm i -g yarn
-
 ## install linuxbrew
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 sudo apt-get install build-essential
 echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >>~/.profile
 eval \$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
-## install rbenv
-
-brew install rbenv
-brew install ruby-build
-rbenv install 2.4.2
-rbenv global 2.4.2
 
 ## install docker-compose
 
@@ -72,34 +84,7 @@ sudo groupadd docker
 sudo usermod -aG docker \$USER
 
 ## Utils install
-
-### install htop
-
-- sudo apt-get install htop
-
 ### install telegram-desktop
 
 - wget -O- https://telegram.org/dl/desktop/linux | sudo tar xJ -C /opt/
 - sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
-
-### install pg files before runninng
-
-- sudo apt-get install postgresql-client libpq5 libpq-dev
-
-### fix ES memory problem (linux)
-
-- sudo sysctl -w vm.max_map_count=262144
-
-### install heroku cli
-
-- sudo snap install --classic heroku
-
-### install prhaseapp
-
-- brew tap phrase/brewed
-- brew install phraseapp
-
-### install aws cli
-
-- brew install awscli
-  aws configure [use your own keys provided on lastpass]
